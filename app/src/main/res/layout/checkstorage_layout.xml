@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/colorSuccess"
+    android:id="@+id/StorageCheckItem"
+    android:layout_marginTop="10dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/txt_check_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            tools:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/txt_check_item_read_or_write"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="读/写"
+            android:textSize="22sp"
+            android:visibility="gone"
+            android:textColor="@android:color/black" />
+
+        <CheckBox
+            android:id="@+id/ckb_check_item_read_or_write"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:focusable="false"
+            android:visibility="gone"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="路径："
+            android:textSize="14sp"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/txt_check_item_path"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="总容量："
+            android:textSize="14sp"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/txt_check_item_space_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="剩余容量"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/txt_check_item_space_available"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+
+</LinearLayout>

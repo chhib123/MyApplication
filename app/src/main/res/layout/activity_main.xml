@@ -5,142 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@android:color/background_light">
+    android:background="@drawable/main_header_selector">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="8"
-        android:orientation="vertical"
-        android:id="@+id/AutoTest"
-        android:background="@color/colorAccent">
-
-        <GridLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="2"
-            android:background="@android:color/holo_blue_light">
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_row="0"
-                android:layout_column="0"
-                android:layout_rowWeight="1"
-                android:layout_columnWeight="1"
-                android:text="Hello World!"/>
-
-        </GridLayout>
-
-        <ListView
-            android:id="@+id/check_storage_list"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:focusable="false" >
-        </ListView>
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text=" World!"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="6"
-        android:id="@+id/InfoShow">
-
-        <GridLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@android:color/darker_gray"
-            android:columnCount="4"
-            android:rowCount="4">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_row="0"
-                android:layout_column="0"
-                android:layout_columnSpan="2"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                android:id="@+id/SN"
-                android:text="序列号："/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_row="1"
-                android:layout_column="0"
-                android:layout_columnSpan="2"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                android:id="@+id/MAC"
-                android:text="MAC："/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_row="2"
-                android:layout_column="0"
-                android:layout_columnSpan="2"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                android:id="@+id/privateNo"
-                android:text="privateNo："/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_row="3"
-                android:layout_column="0"
-                android:layout_columnSpan="2"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                android:id="@+id/BackNo"
-                android:text="BackNo："/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_row="0"
-                android:layout_column="2"
-                android:layout_columnSpan="2"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                android:id="@+id/SoftWare"
-                android:text="SoftWare："/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_row="1"
-                android:layout_column="2"
-                android:layout_columnSpan="2"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                android:id="@+id/HardWare"
-                android:text="HardWare："/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_row="3"
-                android:layout_column="3"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                android:layout_gravity="right|bottom"
-                android:id="@+id/SoftCheck"
-                android:text="SoftCheck"/>
-        </GridLayout>
-
-    </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -162,6 +28,222 @@
             android:text="Done"/>
 
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:id="@+id/InfoShow">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?attr/actionModeSplitBackground"
+            android:columnCount="4"
+            android:rowCount="4"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:text="序列号："
+                android:textSize="18sp"
+                android:textColor="@android:color/white"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:layout_columnWeight="5"
+                android:layout_rowWeight="1"
+                android:id="@+id/SN"
+                android:text="序列号"
+                android:textSize="18sp"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:text="MAC："
+                android:textSize="18sp"
+                android:textColor="@android:color/white"
+                android:layout_marginLeft="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:layout_columnWeight="5"
+                android:layout_rowWeight="1"
+                android:id="@+id/MAC"
+                android:text="MAC"
+                android:textSize="18sp"
+                android:textColor="@android:color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="2"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:text="privateNo："
+                android:textSize="18sp"
+                android:textColor="@android:color/white"
+                android:layout_marginLeft="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="2"
+                android:layout_column="1"
+                android:layout_columnWeight="5"
+                android:layout_rowWeight="1"
+                android:id="@+id/privateNo"
+                android:text="privateNo"
+                android:textSize="18sp"
+                android:textColor="@android:color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="3"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:text="BackNo："
+                android:textSize="18sp"
+                android:textColor="@android:color/white"
+                android:layout_marginLeft="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="3"
+                android:layout_column="1"
+                android:layout_columnWeight="5"
+                android:layout_rowWeight="1"
+                android:id="@+id/BackNo"
+                android:text="BackNo"
+                android:textSize="18sp"
+                android:textColor="@android:color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_column="2"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:text="SoftWare："
+                android:textSize="18sp"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_column="3"
+                android:layout_columnWeight="3"
+                android:layout_rowWeight="1"
+                android:id="@+id/SoftWare"
+                android:text="SoftWare"
+                android:textSize="18sp"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="1"
+                android:layout_column="2"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:text="HardWare："
+                android:textSize="18sp"
+                android:textColor="@android:color/white"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="1"
+                android:layout_column="3"
+                android:layout_columnWeight="3"
+                android:layout_rowWeight="1"
+                android:id="@+id/HardWare"
+                android:text="HardWare"
+                android:textSize="18sp"
+                android:textColor="@android:color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="3"
+                android:layout_column="3"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_gravity="right|bottom"
+                android:id="@+id/SoftCheck"
+                android:text="SoftCheck"
+                android:textSize="22sp"
+                android:layout_marginRight="15dp" />
+        </GridLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:orientation="horizontal"
+        android:id="@+id/AutoTest">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/CheckItemGrid"
+            android:orientation="vertical">
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:id="@+id/CheckXLItem">
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/check_storage_list"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:focusable="false" >
+        </ListView>
+
+    </LinearLayout>
+
+
 
 
 </LinearLayout>

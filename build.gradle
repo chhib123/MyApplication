@@ -17,6 +17,11 @@ allprojects {
         jcenter()
         maven { url 'http://repo1.maven.org/maven2' }
     }
+    gradle.projectsEvaluated {
+        tasks.withType(JavaCompile) {
+            options.compilerArgs.add('-Xbootclasspath/p:app\\libs\\framework.jar')
+        }
+    }
 }
 
 task clean(type: Delete) {

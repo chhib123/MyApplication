@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#d8d1d3</color>
+    <color name="colorPrimaryDark">#303f9f</color>
+    <color name="colorAccent">#00d8d1d3</color>
+    <color name="colorPrepare">#dcdcdc</color> <!-- 淡灰色 gainsboro-->
+    <color name="colorChecking">#ffff99</color> <!-- 桔黄色 bisque -->
+    <color name="colorFail">#ff3333</color> <!-- 褐玫瑰红 rosybrown-->
+    <color name="colorSuccess">#009900</color> <!-- 苍绿色 palegreen-->
 </resources>
